@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Love for You</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #ffebeb;
+            font-family: 'Cursive', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            border: 5px solid red;
+            max-width: 90%;
+            width: 600px;
+        }
+        .heart {
+            color: red;
+            font-size: 80px;
+            animation: heartbeat 1.5s infinite;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        .message {
+            font-size: 22px;
+            color: #b30000;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .hidden-message {
+            display: none;
+            font-size: 26px;
+            font-weight: bold;
+            color: #ff0000;
+            margin-top: 20px;
+            transition: opacity 1s;
+        }
+        .btn {
+            margin-top: 20px;
+            padding: 12px 24px;
+            font-size: 18px;
+            border: none;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            border-radius: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s;
+        }
+        .btn:hover {
+            background-color: darkred;
+            transform: scale(1.1);
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+                width: 90%;
+            }
+            .heart {
+                font-size: 60px;
+            }
+            .message {
+                font-size: 18px;
+            }
+            .hidden-message {
+                font-size: 22px;
+            }
+            .btn {
+                font-size: 16px;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heart">❤️💖🌹</h1>
+        <p class="message">My love ❤️, I love every moment I spend with you 💞; it feels like a dream come true 💖. You are my peace ✨; you are my sweet home 🏡❤️. Zindagi ek chota sa safar hai 💕, kya aap mere sath iss safar pe chalna chahogi ??💑</p>
+        <p class="message">You are my happiness 😘, my heart ❤️, my forever 💓💞.</p>
+        <button class="btn" onclick="showMessage()">Tap to Reveal</button>
+        <p class="hidden-message" id="hiddenMessage">Will you be my Valentine Vanshika Chaudhary Jii?? 💞💖💕</p>
+    </div>
+    
+    <script>
+        function showMessage() {
+            document.getElementById("hiddenMessage").style.display = "block";
+            document.getElementById("hiddenMessage").style.opacity = "1";
+        }
+    </script>
+</body>
+</html>
